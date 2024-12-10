@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        body{
+            background-color: rgb(66, 76, 114);
+            margin: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        p{
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        /* Navigation Bar */
+        nav {
+            background-color: rgb(54, 64, 99);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: rgb(92, 106, 163);
+        }
+        /* Main Sections */
+        .firstbox{
+            padding-bottom: 20px;
+        }
+        .topgrid1{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+        }
+        .contact, .email{
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 10px;
+            color: white;
+        }
+        .botgrid1{
+            background-color: rgb(84, 96, 144);
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .meinfo{
+            width: 400px;
+            padding-left: 15px;
+            padding-top: 20px;
+            color: white;
+        }
+        .mypicture{
+            margin-bottom: 0%;
+            text-align: center;
+        }
+        .careerinfo{
+            width: 500px;
+            padding-left: 20px;
+            color: white;
+        }
+        /* Solutions and Call to Action */
+        .solutions, .calltoaction{
+            margin-top: 20px;
+            background-color: rgb(84, 96, 144);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+        .solution-img, .action-img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .link-btn{
+            background-color: rgb(92, 106, 163);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            display: inline-block;
+        }
+        .link-btn:hover{
+            background-color: rgb(66, 76, 114);
+        }
+        /* Services Section */
+        .services {
+            background-color: rgb(66, 76, 114);
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+        }
+        .services h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .service-item {
+            display: inline-block;
+            width: 250px;
+            margin: 20px;
+            text-align: center;
+            background-color: rgb(84, 96, 144);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .service-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        /* Footer Section */
+        .footer{
+            background-color: rgb(54, 64, 99);
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            color: rgb(92, 106, 163);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <div id="about" class="firstbox">
+        <div class="topgrid1">
+            <div>
+                <p class="email">&#8226;Email : bryandavalos06@gmail.com</p>
+            </div>
+            <div>
+                <p class="contact">&#8226;Contact: 0906-6904-875</p>
+            </div>
+        </div>
+
+        <div class="botgrid1">
+            <div class="meinfo">
+                <div>
+                    <p style="font-size: 50px;">NICKO BRYAN</p>
+                    <p style="font-size: 100px;">DAVALOS</p>
+                </div>
+                <div>
+                    <p>Computer Science Student</p>
+                    <p>Currently a first-year student, passionate about learning and developing in the field of technology, aiming to apply knowledge for real-world problem solving.</p>
+                </div>
+            </div>
+            <div class="mypicture">
+                <img class="bryan" src="pics/ME.png" alt="Bryan's Picture" style="width: 300px; border-radius: 10px;">
+            </div>
+            <div class="careerinfo">
+                <p style="margin-top: 25px; font-size: 25px;">Why I Chose Computer Science</p>
+                <p style="text-align: justify;">I’ve always been fascinated by how technology shapes the world, from simple programs to complex systems that power our daily lives. Choosing Computer Science allows me to combine problem-solving skills with creativity to build meaningful applications. As a first-year student, I’m eager to expand my knowledge and skills to contribute to innovative solutions in the future.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="services">
+        <h2>Skills</h2>
+        <div class="service-item">
+            <h3>C++ Programming</h3>
+            <p>Basic knowledge of C++ for problem-solving and algorithms.</p>
+        </div>
+        <div class="service-item">
+            <h3>Web Development</h3>
+            <p>Learning to build simple websites using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="service-item">
+            <h3>Data Structures</h3>
+            <p>Basic understanding and implementing essential data structures like arrays and vectors.</p>
+        </div>
+    </div>
+
+    <!-- Solutions Section -->
+    <div id="solutions" class="solutions">
+        <p style="font-size: 25px; text-align: center;">Proposed Solutions for Zero Hunger</p>
+        <p style="text-align: justify;">
+            One of the most pressing challenges in achieving Zero Hunger is improving agricultural practices and ensuring that farmers have the tools they need to grow enough food to meet demand. By implementing sustainable farming technologies, we can significantly increase crop yields while reducing environmental impact. This includes the use of precision farming, which employs data and technology to optimize the use of resources such as water and fertilizers.
+        </p>
+        <p style="text-align: justify;">
+            In addition to improving farming techniques, it's crucial to address the economic challenges faced by farmers. One effective solution is providing access to fair markets where farmers can sell their produce at a reasonable price. Establishing cooperatives and direct trade links can help ensure that farmers receive fair compensation for their work, empowering them to reinvest in their businesses and communities.
+        </p>
+        <p style="text-align: justify;">
+            Another key solution is promoting food distribution networks that help get nutritious food to those in need. By establishing partnerships with NGOs and local government units, we can set up systems that connect excess food from farms and businesses to areas where it’s needed most, reducing both food waste and hunger.
+        </p>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 Nicko Bryan Davalos.</p>
+    </div>
+
+</body>
+</html>
